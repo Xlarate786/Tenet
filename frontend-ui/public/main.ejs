@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Spoofify</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato:300|Work+Sans:500" rel="stylesheet">
+        <link rel='stylesheet' type='text/css' href='styles/styles.css'>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="scripts/api-calls.js"></script>
+        <script src="scripts/models.js"></script>
+        <script src="scripts/library.js"></script>
+        <script src="scripts/main.js"></script>
+    </head>
+    <body class="main-container">
+        <header>
+            <p>Main page where all the music and content is being played and rendered.</p>
+            <p>Welcome, <%= display_name %> (<%= username %>)!</p>
+        </header>
+        <main class="suggested-table-wrapper">
+            <span class="table-header">Play Song | Song Name | Artist Name(s) | Album</span>
+            <div class="suggested-table js-suggested-table">
+                <% for(var i = 0; i < recent_songs.length; i++) { %>
+                <div class="song-wrapper">
+                    <a class="play-button js-play-button" data-href="">Play</a>
+                    <span class="song-text"> | Song Name | </span>
+                    <span class="song-text">Artist Name | </span>
+                    <span class="song-text">Album Name</span>
+                </div>
+                <% } %>
+            </div>
+            <div class="title">
+                <span class="js-title-display"></span>
+                <span>---</span>
+                <span class="js-artist-display"></span>
+                <audio class="player js-player" src="" controls>
+                    Your browser does not support the audio element.
+                </audio>
+                <br>
+                <button class="refresh-button js-refresh-button">Refresh Suggested Songs</button>
+            </div>
+
+        </main>
+    </body>
+</html>

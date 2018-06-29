@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Spoofify - Login</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato:300|Work+Sans:500" rel="stylesheet">
+        <link rel='stylesheet' type='text/css' href='styles/styles.css'>
+    </head>
+    <body class="main-container">
+        <form method="post" action="/login-validate" class="form-wrapper">
+            <h1 class="form-title">Login below</h1>
+            <input class="text-input" type="text" name="username" placeholder="Username" required/><br>
+            <input class="text-input" type="password" name="password" placeholder="Password" required/><br>
+            <input class="submit-input" type="submit" name="submit" value="Log In"/><br><br>
+            <% if (locals.error) { %>
+            <span class="error-msg-active error-msg"><%= error %></span>
+            <% } %>
+        </form>
+    </body>
+</html>

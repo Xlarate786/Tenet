@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spoofify - Sign up</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300|Work+Sans:500" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' href='styles/styles.css'>
+    <script src="scripts/confirm-password.js"></script>
+</head>
+<body class="main-container">
+    <form class="form-wrapper js-signup-form" method="post" action="/sign-up-validate">
+        <h1 class="form-title">Fill in the form below to sign up for Spoofify</h1>
+        <div class="input-wrapper">
+            <input class="text-input" type="text" name="username" placeholder="Username" required/>
+        </div>
+        <div class="input-wrapper">
+            <input type="password" class="text-input js-password" name="password" placeholder="Password" required/>
+        </div>
+        <div class="input-wrapper">
+            <input type="password" class="text-input js-confirm-pass" name="confirmpass" placeholder="Confirm Password" required/>
+            <br><br>
+            <span class="error-msg js-confirm-pass-error">Confirmed password does not match above password.</span>
+            <br><br>
+        </div>
+        <div class="input-wrapper">
+            <input class="submit-input" type="submit" name="submit" value="Sign Up!"/>
+        </div>
+    </form>
+    <% if (locals.error) { %>
+    <span class="error-msg-active error-msg"><%= error %></span>
+    <% } %>
+</body>
+</html>

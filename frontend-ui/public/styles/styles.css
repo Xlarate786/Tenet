@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    background-image: url(../images/background.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    
+    height: 100vh;
+    width: 100vw;
+    vertical-align: middle;
+}
+
+header {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.title-wrapper {
+    position: absolute;
+    top: 30vh;
+    text-align: center;
+    width: 100%;
+}
+
+.page-header {
+    font-size: 100px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    color: #fff;
+}
+
+.neon-green {
+    color: #1DB954;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+}
+
+.cta-button-wrapper {
+    margin-top: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-left: 20px;
+    padding: 10px 30px;
+    border: 1.5px #1DB954 solid;
+    border-radius: 5px;
+    color: #1DB954;
+    font-size: 30px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #1DB954;
+    color: #fff;
+}
+
+.error-msg {
+    color: red;
+    display: none;
+}
+
+.error-msg-active {
+    display: inline;
+}
+
+.play-button {
+    color: #0066ff;
+    text-decoration: underline;
+}
+
+.play-button:hover {
+    cursor: pointer;
+}
+
+.suggested-table-wrapper {
+    width: 70%;
+    margin-left: 15%;
+}
+
+.song-wrapper {
+    padding: 5px;
+    border-bottom: 1px solid black;
+}
+
+.player {
+    width: 100%;
+    margin: 20px 0px;
+}
+
+.title {
+    margin: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.refresh-button {
+    display: inline-block;
+    margin-left: 20px;
+    padding: 10px 30px;
+    border: 1.5px #1DB954 solid;
+    border-radius: 5px;
+    color: #1DB954;
+    font-size: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: white;
+}
+
+.refresh-button:hover {
+    background-color: #1DB954;
+    color: #fff;
+}
+
+.table-header {
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.suggested-table {
+    margin-top: 20px;
+}
+
+.form-wrapper {
+    width: 60%;
+    margin-left: 20%;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.text-input {
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+.submit-input {
+    display: inline-block;
+    margin-left: 20px;
+    padding: 10px 30px;
+    border: 1.5px #1DB954 solid;
+    border-radius: 5px;
+    color: #1DB954;
+    font-size: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: white;
+}
+
+.submit-input:hover {
+    background-color: #1DB954;
+    color: #fff;
+}
+
+.form-title {
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+}
